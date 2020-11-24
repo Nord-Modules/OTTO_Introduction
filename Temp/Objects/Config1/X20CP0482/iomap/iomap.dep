@@ -1,0 +1,2 @@
+$(AS_PROJECT_PATH)/logical/libraries/handshake/types.typ
+$(AS_PROJECT_PATH)/logical/modbus/types.typ

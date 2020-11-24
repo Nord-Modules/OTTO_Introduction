@@ -1,0 +1,17 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=GPIO_Hands 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=4 Index=3 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                                      io                                  io_type    0 "                                                               *"    0   24    1    0    1    1         
+                               handshake                       GPIO_Hanshake_type    0 "                                                               *"    1   24    1    0    0    1         
+                            ROBOT_ENABLE                                     BOOL    3 "                                                            TRUE"    2    1    1    2    0    0         
+                         PA_FAULT_STATUS                                     BOOL    3 "                                                            TRUE"    2    1    1    2    0    0         
+                               PA_ENABLE                                     BOOL    1 "                                                           FALSE"    2    1    1    2    0    0         
+                                     LED                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
+                                   timer                                      TON    0 "                                                               *"    0   24    1    0    1    1         
+                                      IN                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                      PT                                     TIME    0 "                                                           T#01s"    1   12    1    1    0    0         
+                                       Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                      ET                                     TIME    0 "                                                           T#0ms"    1   12    1    1    0    0         
+                               StartTime                                     TIME    0 "                                             T#01h_06m_37s_970ms"    1   12    1    1    0    0         
+                                       M                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 Restart                                    UDINT    0 "                                                              19"    1    7    1   10    0    0         

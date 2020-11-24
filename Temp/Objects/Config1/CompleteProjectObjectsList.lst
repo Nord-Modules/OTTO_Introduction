@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.7.2.98"?>
+<Objects>
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package.ParentUnknown"
+    LastWriteTime="132496579578492717" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Global.typ"
+    LogicalPath="Global.typ"
+    Type="File"
+    LastWriteTime="132495640158973198"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Global.var"
+    LogicalPath="Global.var"
+    Type="File"
+    LastWriteTime="132495640159463128"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="132496578787822952" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\operator\binary.lby"
+    LogicalPath="Libraries.operator"
+    Type="Library"
+    LastWriteTime="132495640234783229" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\operator\operator.fun"
+    LogicalPath="Libraries.operator.operator.fun"
+    Type="File"
+    LastWriteTime="132495640234163181"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\operator\operator.typ"
+    LogicalPath="Libraries.operator.operator.typ"
+    Type="File"
+    LastWriteTime="132495640234433216"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\operator\operator.var"
+    LogicalPath="Libraries.operator.operator.var"
+    Type="File"
+    LastWriteTime="132495640234753241"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\runtime\binary.lby"
+    LogicalPath="Libraries.runtime"
+    Type="Library"
+    LastWriteTime="132495640245433126" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\runtime\runtime.fun"
+    LogicalPath="Libraries.runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="132495640244923145"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\runtime\runtime.typ"
+    LogicalPath="Libraries.runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="132495640245153211"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\runtime\runtime.var"
+    LogicalPath="Libraries.runtime.runtime.var"
+    Type="File"
+    LastWriteTime="132495640245413225"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\standard\binary.lby"
+    LogicalPath="Libraries.standard"
+    Type="Library"
+    LastWriteTime="132495699659316975" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\standard\standard.fun"
+    LogicalPath="Libraries.standard.standard.fun"
+    Type="File"
+    LastWriteTime="132495699659160708"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\standard\standard.typ"
+    LogicalPath="Libraries.standard.standard.typ"
+    Type="File"
+    LastWriteTime="132495699659160708"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\standard\standard.var"
+    LogicalPath="Libraries.standard.standard.var"
+    Type="File"
+    LastWriteTime="132495699659316975"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\astime\binary.lby"
+    LogicalPath="Libraries.astime"
+    Type="Library"
+    LastWriteTime="132495640257813223" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\astime\astime.fun"
+    LogicalPath="Libraries.astime.astime.fun"
+    Type="File"
+    LastWriteTime="132495640257383186"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\astime\astime.typ"
+    LogicalPath="Libraries.astime.astime.typ"
+    Type="File"
+    LastWriteTime="132495640257583149"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\astime\astime.var"
+    LogicalPath="Libraries.astime.astime.var"
+    Type="File"
+    LastWriteTime="132495640257803202"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\AsIecCon\binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="132495640278763332" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="132495640278453107"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
+    Type="File"
+    LastWriteTime="132495640278593225"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\AsIecCon\AsIecCon.var"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.var"
+    Type="File"
+    LastWriteTime="132495640278743130"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\Handshake\IEC.prg"
+    LogicalPath="Libraries.Handshake"
+    Type="Program"
+    LastWriteTime="132496572369215031" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\Handshake\handshake.st"
+    LogicalPath="Libraries.Handshake.handshake.st"
+    Type="File"
+    LastWriteTime="132497291253647117"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\Handshake\Types.typ"
+    LogicalPath="Libraries.Handshake.Types.typ"
+    Type="File"
+    LastWriteTime="132496580914061248"
+    Private="true" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\Handshake\Variables.var"
+    LogicalPath="Libraries.Handshake.Variables.var"
+    Type="File"
+    LastWriteTime="132496580908031289"
+    Private="true" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Modbus\IEC.prg"
+    LogicalPath="Modbus"
+    Type="Program"
+    LastWriteTime="132496579873307443" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Modbus\modbus.st"
+    LogicalPath="Modbus.modbus.st"
+    Type="File"
+    LastWriteTime="132503534740059828"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Modbus\Types.typ"
+    LogicalPath="Modbus.Types.typ"
+    Type="File"
+    LastWriteTime="132503540354317828"
+    Private="true" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Modbus\Variables.var"
+    LogicalPath="Modbus.Variables.var"
+    Type="File"
+    LastWriteTime="132497323234052344"
+    Private="true" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\Config.pkg"
+    LogicalPath="Config1"
+    Type="Configuration.ParentUnknown"
+    LastWriteTime="132495640408313060" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\Hardware.hw"
+    LogicalPath="Config1.Hardware.hw"
+    Type="File"
+    LastWriteTime="132503564792550164"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\Hardware.hwl"
+    LogicalPath="Config1.Hardware.hwl"
+    Type="File"
+    LastWriteTime="132503547732008841"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\Cpu.pkg"
+    LogicalPath="Config1.X20CP0482"
+    Type="Cpu"
+    LastWriteTime="132495640341993119" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\Cpu.sw"
+    LogicalPath="Config1.X20CP0482.Cpu.sw"
+    Type="File"
+    LastWriteTime="132497312719211315"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\Cpu.per"
+    LogicalPath="Config1.X20CP0482.Cpu.per"
+    Type="File"
+    LastWriteTime="132495640320563149"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\IoMap.iom"
+    LogicalPath="Config1.X20CP0482.IoMap.iom"
+    Type="File"
+    LastWriteTime="132503542943778558"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\PvMap.vvm"
+    LogicalPath="Config1.X20CP0482.PvMap.vvm"
+    Type="File"
+    LastWriteTime="132495640321423183"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\Connectivity\Package.pkg"
+    LogicalPath="Config1.X20CP0482.Connectivity"
+    Type="Package"
+    LastWriteTime="132495640329763185" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\Connectivity\OpcUA\Package.pkg"
+    LogicalPath="Config1.X20CP0482.Connectivity.OpcUA"
+    Type="Package"
+    LastWriteTime="132495640329563372" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\TextSystem\Package.pkg"
+    LogicalPath="Config1.X20CP0482.TextSystem"
+    Type="Package"
+    LastWriteTime="132495640330243114" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\UnitSystem\Package.pkg"
+    LogicalPath="Config1.X20CP0482.UnitSystem"
+    Type="Package"
+    LastWriteTime="132495640330793307" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity"
+    Type="Package"
+    LastWriteTime="132495640337303116" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\UserRoleSystem\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.UserRoleSystem"
+    Type="Package"
+    LastWriteTime="132495640333713110" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\UserRoleSystem\Role.role"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.UserRoleSystem.Role.role"
+    Type="File"
+    LastWriteTime="132495640332843083"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\UserRoleSystem\User.user"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.UserRoleSystem.User.user"
+    Type="File"
+    LastWriteTime="132495640333693489"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore"
+    Type="Package"
+    LastWriteTime="132495640336263076" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore.OwnCertificates"
+    Type="Package"
+    LastWriteTime="132495640334963131" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore.OwnCertificates.Certificates"
+    Type="Package"
+    LastWriteTime="132495640334153129" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore.OwnCertificates.PrivateKeys"
+    Type="Package"
+    LastWriteTime="132495640334903115" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore.ThirdPartyCertificates"
+    Type="Package"
+    LastWriteTime="132495640335693114" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore.ThirdPartyCertificates.SoftwareCertificates"
+    Type="Package"
+    LastWriteTime="132495640335493134" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore.CertificateRevocationLists"
+    Type="Package"
+    LastWriteTime="132495640335803125" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.CertificateStore.CertificateSigningRequests"
+    Type="Package"
+    LastWriteTime="132495640336073420" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.TransportLayerSecurity"
+    Type="Package"
+    LastWriteTime="132495640336553091" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\Firewall\Package.pkg"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.Firewall"
+    Type="Package"
+    LastWriteTime="132495640337093074" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\AccessAndSecurity\Firewall\Rules.firewallRules"
+    LogicalPath="Config1.X20CP0482.AccessAndSecurity.Firewall.Rules.firewallRules"
+    Type="File"
+    LastWriteTime="132495640337073087"
+    Private="false" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\mappControl\Package.pkg"
+    LogicalPath="Config1.X20CP0482.mappControl"
+    Type="Package"
+    LastWriteTime="132495640337933147" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\mappMotion\Package.pkg"
+    LogicalPath="Config1.X20CP0482.mappMotion"
+    Type="Package"
+    LastWriteTime="132495640338553117" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\mappServices\Package.pkg"
+    LogicalPath="Config1.X20CP0482.mappServices"
+    Type="Package"
+    LastWriteTime="132495640340073616" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\mappView\Package.pkg"
+    LogicalPath="Config1.X20CP0482.mappView"
+    Type="Package"
+    LastWriteTime="132495640340673134" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\X20CP0482\mappCockpit\Package.pkg"
+    LogicalPath="Config1.X20CP0482.mappCockpit"
+    Type="Package"
+    LastWriteTime="132495640341553219" />
+  <Object
+    Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Physical\Config1\Hardware.jpg"
+    LogicalPath="Config1.Hardware.jpg"
+    Type="File"
+    LastWriteTime="132503547732418998"
+    Private="false" />
+</Objects>

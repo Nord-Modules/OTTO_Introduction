@@ -1,0 +1,8 @@
+VAR_CONFIG
+	::Handshake:io.handshake.PA_ENABLE AT %IX."X20DI6371".DigitalInput01 INVERSE;
+	::Handshake:io.handshake.ROBOT_ENABLE AT %QX."X20DO6322".DigitalOutput01;
+	::Handshake:io.handshake.PA_FAULT_STATUS AT %QX."X20DO6322".DigitalOutput02;
+	::Handshake:io.LED AT %QX."X20DO6322".DigitalOutput06;
+	::Modbus:modbus.Attachment_Type AT %QW."ModbusTcp_any".attachment_type;
+	::Modbus:modbus.Safe_to_Move AT %IX."ModbusTcp_any".safe_to_move;
+END_VAR

@@ -1,0 +1,4 @@
+VAR
+	io : io_type;
+	timer : TON;
+END_VAR

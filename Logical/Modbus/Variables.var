@@ -1,0 +1,3 @@
+VAR
+	modbus : modbus_type;
+END_VAR
