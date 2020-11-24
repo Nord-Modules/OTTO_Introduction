@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Parameters>
   <Connection>
-    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1 </DeviceParameters>
-    <ConnectionParameters>/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=169.254.39.254 /REPO=11159 /ANSL=1 /PT=11169 </ConnectionParameters>
+    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
+    <ConnectionParameters>/COMT=2500 /AM=* /DAIP=169.254.39.254 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>C:\Users\mafio\OneDrive\EE\BandR\OTTO\OTTO.apj</ApjFullFileName>
+    <ApjFullFileName>C:\Users\mafio\Documents\GitHub\OTTO_Introduction\OTTO.apj</ApjFullFileName>
     <ProjectName>OTTO</ProjectName>
     <ActiveConfigurationName>Config1</ActiveConfigurationName>
-    <LicenseDataFolder>C:\Users\mafio\OneDrive\EE\BandR\OTTO\Temp\Objects\Config1\X20CP0482</LicenseDataFolder>
+    <LicenseDataFolder>C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\Config1\X20CP0482</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

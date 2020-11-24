@@ -21,7 +21,7 @@
     Version="" />
   <Library
     Name="runtime"
-    IsDeployed="false"
+    IsDeployed="true"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />

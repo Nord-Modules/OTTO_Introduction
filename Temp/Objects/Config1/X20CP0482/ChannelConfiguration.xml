@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <?AutomationRuntimeIOSystem Version = 2.5.0.7?>
 <ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
+  <Module ID="IF2.MODBUSSLAVE_1" Hardware="X20BB52" HardwareModuleName="X20CP0482" ModuleID="17">
+    <Channel ID="IF2.ActualNumberOfClients_1" Description="" Direction="IN" Type="UINT" Ext="/DYNAMIC" ModbusTcpSlaveModuleId="IF2.MODBUSSLAVE_1" ModbusTcpSlaveLinkNode="IF2.MODBUSSLAVE_1.IF2" />
+    <Channel ID="IF2.PacketCount_1" Description="" Direction="IN" Type="DINT" Ext="/DYNAMIC" ModbusTcpSlaveModuleId="IF2.MODBUSSLAVE_1" ModbusTcpSlaveLinkNode="IF2.MODBUSSLAVE_1.IF2" />
+    <Channel ID="IF2.ErrorCount_1" Description="" Direction="IN" Type="DINT" Ext="/DYNAMIC" ModbusTcpSlaveModuleId="IF2.MODBUSSLAVE_1" ModbusTcpSlaveLinkNode="IF2.MODBUSSLAVE_1.IF2" />
+    <Channel ID="IF2.TimeSinceLastRequest_1" Description="" Direction="IN" Type="DINT" Ext="/DYNAMIC" ModbusTcpSlaveModuleId="IF2.MODBUSSLAVE_1" ModbusTcpSlaveLinkNode="IF2.MODBUSSLAVE_1.IF2" />
+    <Channel ID="IF2.Safe_To_Move" Description="" Direction="IN" Type="BOOL" Ext="/DYNAMIC" Address="4000" ModbusTcpSlaveModuleId="IF2.MODBUSSLAVE_1" ModbusTcpSlaveLinkNode="IF2.MODBUSSLAVE_1.IF2" />
+    <Channel ID="IF2.attachment_type" Description="" Direction="IN" Type="UINT" Ext="/DYNAMIC" Address="4004" ModbusTcpSlaveModuleId="IF2.MODBUSSLAVE_1" ModbusTcpSlaveLinkNode="IF2.MODBUSSLAVE_1.IF2" />
+  </Module>
   <Module ID="$root" Hardware="X20BB52" HardwareModuleName="X20CP0482" ModuleID="17">
     <Channel ID="SerialNumber_CPU" Description="Serial number of CPU board" Ext="/HW" Address="0" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="HwGetSerialNumber" Sig_St_Udint="1" />
     <Channel ID="ModuleID_CPU" Description="Module ID of CPU board" Ext="/HW" Address="1" Direction="IN" Type="UINT" ChannelType="ModuleIDCpu" Sig_St_Uint="1" />
@@ -9,26 +17,6 @@
     <Channel ID="TemperatureCPU" Description="Temperature CPU [1/10C]" Ext="/HW" Address="4" Direction="IN" Type="INT" Sig_Temp_CpuTemp="1" ChannelType="Temp" Ordinal="2" />
     <Channel ID="TemperatureENV" Description="Temperature cooling plate [1/10C]" Ext="/HW" Address="5" Direction="IN" Type="INT" Sig_Temp_CpuTemp="1" ChannelType="Temp" Ordinal="1" />
     <Channel ID="SystemTime" Description="System time at the start of the current task cycle [µs]" Ext="/HW" Address="6" Direction="IN" Type="DINT" Sig_St_Dint="1" ChannelType="SystemTime" />
-    <Channel ID="IF2.MODBUS.ModbusMasterDiag" Description="Activate general master diagnostics." Description-de="Aktiviere allgemeine Masterdiagnosekanäle." Ext="/HW" Direction="OUT" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagActInternalError" Description="Current internal error of master and/or slaves." Description-de="Aktueller interner Fehler Master und/oder Slaves." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagActConfigError" Description="Current configuration error of master and/or slaves." Description-de="Aktueller Konfigurationsfehler Master und/oder Slaves." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagActConError" Description="Current connection error of master and/or slaves." Description-de="Aktueller Verbindungsfehler Master und/oder Slaves." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagActSlvRefreshError" Description="Current refresh error of slave(s)." Description-de="Aktueller Aktualisierungsfehler Slave(s)." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagActSlaveError" Description="Current slave error." Description-de="Aktueller Slave Fehler." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagHistInternalError" Description="Error history of internal errors since last reset." Description-de="Interne Fehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagHistConfigError" Description="Error history of configuration errors since last reset." Description-de="Konfigurationsfehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagHistConError" Description="Error history of connection errors since last reset." Description-de="Verbindungssfehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagHistSlvRefreshError" Description="Error history of slave refresh errors since last reset." Description-de="Slave-Aktualisierungsfehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.DiagHistSlaveError" Description="Error history of slave errors since last reset." Description-de="Slave-Fehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.ModMasterState" Description="Modbus master driver state." Description-de="Status des Modbus Mastertreibers." Ext="/HW" Direction="IN" Type="UINT" />
-    <Channel ID="IF2.MODBUS.ErrorRemoteAddress" Description="Station number of slave with last error." Description-de="Stationsnummer des Slaves, der zuletzt einen Fehler gemeldet hat." Ext="/HW" Direction="IN" Type="UINT" />
-    <Channel ID="IF2.MODBUS.SlvInternalError" Description="Last error of slave was an internal error." Description-de="Der letzte gemeldete Fehler eines Slaves war ein interner Fehler." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.SlvConfError" Description="Last error of slave was a configuration error." Description-de="Der letzte gemeldete Fehler eines Slaves war ein Konfigurationsfehler." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.SlvOverloadError" Description="Last error of slave was an overlaod error." Description-de="Der letzte gemeldete Fehler eines Slaves war ein Überladungssfehler." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.SlvModbusError" Description="Last error of slave was a MODBUS error." Description-de="Der letzte gemeldete Fehler eines Slaves war ein MODBUS Fehler." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.SlvConError" Description="Last error of slave was a connection error." Description-de="Der letzte gemeldete Fehler eines Slaves war ein Verbindungsfehler." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.SlvRefreshError" Description="Last error of slave was a refresh error." Description-de="Der letzte gemeldete Fehler eines Slaves war ein Aktualisierungsfehler." Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="IF2.MODBUS.LoggingInhibitTime" Description="Time between two diagnostic log entries [ms]." Description-de="Zeit zwischen zwei Diagnosemeldungen im Logbuch [ms]." Ext="/HW" Direction="OUT" Type="UDINT" />
     <Channel ID="IF3.LinkOk" Description="Link state" Ext="/INFO" Address="0x8000001A" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
   </Module>
   <Module ID="IF2.ST1" Hardware="ModbusTcp_any" HardwareModuleName="ModbusTcp_any" ModuleID="1" Simulatable="true">
@@ -54,8 +42,6 @@
     <Channel ID="ModbusPktRefreshTimeoutCnt" Description="Counter of refresh time out." Description-de="Zähler, wie oft der Refresh Timer überschritten wurde." Ext="/HW" Direction="IN" Type="UINT" />
     <Channel ID="ModbusPktPendPerSec" Description="Pending packages per second." Description-de="Ausstehende Modbus-Pakete pro Sekunde." Ext="/HW" Direction="IN" Type="UINT" />
     <Channel ID="ModbusMeanResponseTime" Description="Mean Modbus response time of this slave [ms]." Description-de="Durschnittliche Modbus Antwortszeit dieses Slaves [ms]." Ext="/HW" Direction="IN" Type="UINT" />
-    <Channel ID="safe_to_move" Description="" Ext="/HW" Direction="IN" Type="BOOL" />
-    <Channel ID="attachment_type" Description="" Ext="/HW" Direction="OUT" Type="INT" />
   </Module>
   <Module ID="$root" Hardware="X20BB52" HardwareModuleName="X20BB52" ModuleID="4">
     <Channel ID="ModuleID_BB" Description="Module ID bus base" Ext="/HW" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="ModuleID" />

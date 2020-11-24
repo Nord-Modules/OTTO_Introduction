@@ -2,6 +2,26 @@
 <?AutomationRuntimeIOSystem Version="1.0"?>
 <IO xmlns="http://www.br-automation.com/AR/IO">
 <Links>
+<LN ID="%IW.IF2.MODBUSSLAVE_1.IF2.ActualNumberOfClients_1" Type="UINT">
+<Prod Device="IF2.MODBUSSLAVE_1" DPName="IF2.ActualNumberOfClients_1" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.MODBUSSLAVE_1.IF2.PacketCount_1" Type="DINT">
+<Prod Device="IF2.MODBUSSLAVE_1" DPName="IF2.PacketCount_1" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.MODBUSSLAVE_1.IF2.ErrorCount_1" Type="DINT">
+<Prod Device="IF2.MODBUSSLAVE_1" DPName="IF2.ErrorCount_1" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.MODBUSSLAVE_1.IF2.TimeSinceLastRequest_1" Type="DINT">
+<Prod Device="IF2.MODBUSSLAVE_1" DPName="IF2.TimeSinceLastRequest_1" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.MODBUSSLAVE_1.IF2.Safe_To_Move" Type="BOOL">
+<Prod Device="IF2.MODBUSSLAVE_1" DPName="IF2.Safe_To_Move" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::Modbus:modbus.Safe_to_Move" Kind="pv"/>
+</LN>
+<LN ID="%IW.IF2.MODBUSSLAVE_1.IF2.attachment_type" Type="UINT">
+<Prod Device="IF2.MODBUSSLAVE_1" DPName="IF2.attachment_type" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::Modbus:modbus.Attachment_Type" Kind="pv"/>
+</LN>
 <LN ID="%ID.SerialNumber_CPU" Type="UDINT">
 <Prod Device="$root" DPName="SerialNumber_CPU" Kind="io"/>
 </LN>
@@ -22,66 +42,6 @@
 </LN>
 <LN ID="%ID.SystemTime" Type="DINT">
 <Prod Device="$root" DPName="SystemTime" Kind="io"/>
-</LN>
-<LN ID="%QX.IF2.MODBUS.ModbusMasterDiag" Type="BOOL">
-<Cons Device="$root" DPName="IF2.MODBUS.ModbusMasterDiag" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagActInternalError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagActInternalError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagActConfigError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagActConfigError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagActConError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagActConError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagActSlvRefreshError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagActSlvRefreshError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagActSlaveError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagActSlaveError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagHistInternalError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagHistInternalError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagHistConfigError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagHistConfigError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagHistConError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagHistConError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagHistSlvRefreshError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagHistSlvRefreshError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.DiagHistSlaveError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.DiagHistSlaveError" Kind="io"/>
-</LN>
-<LN ID="%IW.IF2.MODBUS.ModMasterState" Type="UINT">
-<Prod Device="$root" DPName="IF2.MODBUS.ModMasterState" Kind="io"/>
-</LN>
-<LN ID="%IW.IF2.MODBUS.ErrorRemoteAddress" Type="UINT">
-<Prod Device="$root" DPName="IF2.MODBUS.ErrorRemoteAddress" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.SlvInternalError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.SlvInternalError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.SlvConfError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.SlvConfError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.SlvOverloadError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.SlvOverloadError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.SlvModbusError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.SlvModbusError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.SlvConError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.SlvConError" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.MODBUS.SlvRefreshError" Type="BOOL">
-<Prod Device="$root" DPName="IF2.MODBUS.SlvRefreshError" Kind="io"/>
-</LN>
-<LN ID="%QD.IF2.MODBUS.LoggingInhibitTime" Type="UDINT">
-<Cons Device="$root" DPName="IF2.MODBUS.LoggingInhibitTime" Kind="io"/>
 </LN>
 <LN ID="%IX.IF3.LinkOk" Type="BOOL">
 <Prod Device="$root" DPName="IF3.LinkOk" Kind="io"/>
@@ -151,14 +111,6 @@
 </LN>
 <LN ID="%IW.IF2.ST1.ModbusMeanResponseTime" Type="UINT">
 <Prod Device="IF2.ST1" DPName="ModbusMeanResponseTime" Kind="io"/>
-</LN>
-<LN ID="%IX.IF2.ST1.safe_to_move" Type="BOOL">
-<Prod Device="IF2.ST1" DPName="safe_to_move" Kind="io"/>
-<Cons Device="TC#4-CPYDEV" DPName="::Modbus:modbus.Safe_to_Move" Kind="pv"/>
-</LN>
-<LN ID="%QW.IF2.ST1.attachment_type" Type="INT">
-<Prod Device="TC#4-CPYDEV" DPName="::Modbus:modbus.Attachment_Type" Kind="pv"/>
-<Cons Device="IF2.ST1" DPName="attachment_type" Kind="io"/>
 </LN>
 <LN ID="%IW.ModuleID_BB" Type="UINT">
 <Prod Device="$root" DPName="ModuleID_BB" Kind="io"/>

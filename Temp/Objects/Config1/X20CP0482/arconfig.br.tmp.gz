@@ -15,14 +15,49 @@
   <Module ID="IF2" Hardware="X20BB52">
     <Parameter ID="ActivateOSAFT" Value="0" />
   </Module>
-  <Module ID="IF2.MODBUS" Hardware="MODBUS">
-    <Parameter ID="NumSlaves" Value="1" Type="INT" />
-    <Parameter ID="NumAllBlocks" Value="2" Type="INT" />
-    <Parameter ID="MemSizeIn" Value="8" Type="DINT" />
-    <Parameter ID="MemSizeOut" Value="16" Type="DINT" />
-    <Parameter ID="ModbusMaster" Value="1" />
-    <Parameter ID="ModbusSlave" Value="0" />
-    <Parameter ID="SlaveDiagnostics" Value="0" />
+  <Module ID="IF2.MODBUSSLAVE_1" Hardware="MODBUSSLAVE">
+    <Parameter ID="PortNumber" Value="502" Type="UDINT" />
+    <Parameter ID="Timeout" Value="0" Type="UDINT" />
+    <Parameter ID="AddressType" Value="DynamicChannels" />
+    <Channel ID="ActualNumberOfClients_1">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="PacketCount_1">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="DINT" />
+    </Channel>
+    <Channel ID="ErrorCount_1">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="DINT" />
+    </Channel>
+    <Channel ID="TimeSinceLastRequest_1">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="DINT" />
+    </Channel>
+    <Channel ID="Safe_To_Move">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="4000" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="attachment_type">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="4004" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="HoldReg">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="4005" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="OCTET" />
+      <Parameter ID="NrElements" Value="100" Type="UDINT" />
+    </Channel>
   </Module>
   <Module ID="IF2.OPCUA" Hardware="OPCUA">
     <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
@@ -40,31 +75,7 @@
     <Parameter ID="Response" Value="1500" Type="INT" />
     <Parameter ID="PnpTimer" Value="10" Type="INT" />
     <Parameter ID="ResetOutputs" Value="off" />
-    <Parameter ID="NumBlocks" Value="2" Type="INT" />
-    <Parameter ID="Cb_1_FunCode" Value="1" Type="INT" />
-    <Parameter ID="Cb_1_RefreshTime" Value="100" Type="INT" />
-    <Parameter ID="Cb_1_SendMode" Value="0" Type="INT" />
-    <Parameter ID="Cb_1_Addr" Value="3999" Type="UINT" />
-    <Parameter ID="Cb_1_NumItems" Value="1" Type="INT" />
-    <Parameter ID="Cb_1_AddrExt" Value="0" Type="UINT" />
-    <Parameter ID="Cb_1_NumItemsExt" Value="1" Type="INT" />
-    <Parameter ID="Cb_1_C_1_BitoffsetIn" Value="0" Type="DINT" />
-    <Parameter ID="Cb_1_C_1_BitoffsetOut" Value="0" Type="DINT" />
-    <Parameter ID="Cb_1_C_1_Name" Value="safe_to_move" />
-    <Parameter ID="Cb_1_C_1_Datatype" Value="1" />
-    <Parameter ID="Cb_1_C_1_Dir" Value="0" />
-    <Parameter ID="Cb_2_FunCode" Value="6" Type="INT" />
-    <Parameter ID="Cb_2_RefreshTime" Value="100" Type="INT" />
-    <Parameter ID="Cb_2_SendMode" Value="0" Type="INT" />
-    <Parameter ID="Cb_2_Addr" Value="4004" Type="UINT" />
-    <Parameter ID="Cb_2_NumItems" Value="1" Type="INT" />
-    <Parameter ID="Cb_2_AddrExt" Value="4004" Type="UINT" />
-    <Parameter ID="Cb_2_NumItemsExt" Value="1" Type="INT" />
-    <Parameter ID="Cb_2_C_1_BitoffsetIn" Value="8" Type="DINT" />
-    <Parameter ID="Cb_2_C_1_BitoffsetOut" Value="0" Type="DINT" />
-    <Parameter ID="Cb_2_C_1_Name" Value="attachment_type" />
-    <Parameter ID="Cb_2_C_1_Datatype" Value="3" />
-    <Parameter ID="Cb_2_C_1_Dir" Value="1" />
+    <Parameter ID="NumBlocks" Value="-1" Type="INT" />
     <Channel ID="ModuleOk">
       <Parameter ID="Ext" Value="/HW" />
       <Parameter ID="Direction" Value="IN" />
@@ -175,16 +186,6 @@
       <Parameter ID="Direction" Value="IN" />
       <Parameter ID="Type" Value="UINT" />
     </Channel>
-    <Channel ID="safe_to_move">
-      <Parameter ID="Ext" Value="/HW" />
-      <Parameter ID="Direction" Value="IN" />
-      <Parameter ID="Type" Value="BOOL" />
-    </Channel>
-    <Channel ID="attachment_type">
-      <Parameter ID="Ext" Value="/HW" />
-      <Parameter ID="Direction" Value="OUT" />
-      <Parameter ID="Type" Value="INT" />
-    </Channel>
   </Module>
   <Module ID="IF3" Hardware="X20BB52">
     <Parameter ID="Operation" Value="EthOnly" />
@@ -241,4 +242,4 @@
     <Parameter ID="StatusInfo" Value="on" />
     <Parameter ID="PowerInfo" Value="off" />
   </Module>
-</IOCFG>
+</IOCFG>  

@@ -9,11 +9,11 @@
       Source="Libraries.Handshake"
       Language="IEC">
       <InternalFile
-        Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Temp\Objects\Config1\X20CP0482\Handshake\handshake.st.var" />
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\Config1\X20CP0482\Handshake\handshake.st.var" />
       <File
-        Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\Handshake\Types.typ" />
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Libraries\Handshake\Types.typ" />
       <File
-        Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Libraries\Handshake\Variables.var" />
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Libraries\Handshake\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass
@@ -28,11 +28,11 @@
       Source="Modbus"
       Language="IEC">
       <InternalFile
-        Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Temp\Objects\Config1\X20CP0482\Modbus\modbus.st.var" />
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\Config1\X20CP0482\Modbus\modbus.st.var" />
       <File
-        Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Modbus\Types.typ" />
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Modbus\Types.typ" />
       <File
-        Path="C:\Users\mafio\OneDrive\EE\BandR\OTTO\Logical\Modbus\Variables.var" />
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Modbus\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass
