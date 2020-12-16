@@ -1,0 +1,5 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/AsOpcUac/AsOpcUac.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsOpcUac/AsOpcUac.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/AsOpcUac/AsOpcUac.var
+$(AS_PROJECT_PATH)/Logical/OPC_UA/client/Variables.var
+$(AS_PROJECT_PATH)/Logical/OPC_UA/client/Types.typ

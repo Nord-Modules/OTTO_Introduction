@@ -1,0 +1,5 @@
+$(AS_PROJECT_PATH)/Physical/OPCforIgnition/X20CP0482/AccessAndSecurity/CertificateStore/OwnCertificates/Certificates/MyOpcUaCert1.cer
+$(AS_PROJECT_PATH)/Physical/OPCforIgnition/X20CP0482/AccessAndSecurity/CertificateStore/OwnCertificates/PrivateKeys/MyOpcUaServerKey1.key
+$(AS_PROJECT_PATH)/Physical/OPCforIgnition/X20CP0482/AccessAndSecurity/CertificateStore/ThirdPartyCertificates/SoftwareCertificates/ignition-server.der
+$(AS_PROJECT_PATH)/Physical/OPCforIgnition/X20CP0482/AccessAndSecurity/CertificateStore/ThirdPartyCertificates/SoftwareCertificates/ignition-client.der
+$(AS_PROJECT_PATH)/Physical/OPCforIgnition/X20CP0482/AccessAndSecurity/CertificateStore/ThirdPartyCertificates/SoftwareCertificates/ignition-discovery.der

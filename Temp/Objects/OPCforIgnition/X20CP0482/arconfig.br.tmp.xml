@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="X20BB52">
+    <Parameter ID="HardwareModuleName" Value="X20CP0482" />
+    <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
+    <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
+    <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="SimulationModeOpcUa" Value="off" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+    <Parameter ID="X2XCycleTimeMin" Value="1000" Type="UDINT" />
+    <Parameter ID="X2XCycleTimeMax" Value="32000" Type="UDINT" />
+  </Module>
+  <Module ID="CPU" Hardware="X20CP0482" />
+  <Module ID="IF2" Hardware="X20BB52">
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF2.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF2.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF2.ST1" Hardware="OpcUa_any">
+    <Parameter ID="HardwareModuleName" Value="OpcUa_any" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="ServerDiagnostics" Value="on" />
+    <Parameter ID="ServerEndpointUrl" Value="opc.tcp://192.168.1.230:4841" />
+    <Parameter ID="PnPTimeout" Value="1000" Type="UINT" />
+    <Parameter ID="PnPInitTimeout" Value="10" Type="UINT" />
+    <Parameter ID="OpcUa_Security_SoftwareCertificates" Value="SSLConfiguration" />
+    <Parameter ID="SecurityMsgMode" Value="1" Type="UDINT" />
+    <Parameter ID="SecurityPolicy" Value="1" Type="UDINT" />
+    <Parameter ID="UserIdentifyToken" Value="0" />
+    <Channel ID="ModuleOk">
+      <Parameter ID="Ext" Value="/OK" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+      <Parameter ID="Sig_St_Bool" Value="1" />
+    </Channel>
+    <Channel ID="ConnectionLostCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="internal" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="ClientErrorCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="internal" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="LastClientError">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="internal" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="ServerViewCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:ServerViewCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="CurrentSessionCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:CurrentSessionCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="CumulatedSessionCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:CumulatedSessionCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="RejectedSessionCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:RejectedSessionCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="RejectedRequestsCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:RejectedRequestsCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="SecurityRejectedSessionCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:SecurityRejectedSessionCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="SecurityRejectedRequestsCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:SecurityRejectedRequestsCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="SessionTimeoutCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:SessionTimeoutCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="SessionAbortCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:SessionAbortCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="PublishingIntervalCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:PublishingIntervalCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="CurrentSubscriptionCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:CurrentSubscriptionCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+    <Channel ID="CumulatedSubscriptionCount">
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="BrowsePath" Value="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:CumulatedSubscriptionCount" />
+      <Parameter ID="Sig_St_Udint" Value="1" />
+    </Channel>
+  </Module>
+  <Module ID="IF3" Hardware="X20BB52">
+    <Parameter ID="Operation" Value="EthOnly" />
+    <Parameter ID="MtuSize" Value="1500" Type="UDINT" />
+    <Parameter ID="BaudRate" Value="102" Type="UDINT" />
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF3.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF3.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF6.X2X" Hardware="X2X">
+    <Parameter ID="CycleTimeMin" Value="1000" Type="UDINT" />
+    <Parameter ID="CycleTimeMax" Value="32000" Type="UDINT" />
+    <Parameter ID="CycleTime" Value="4000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="BusLength" Value="1000" Type="UDINT" />
+    <Parameter ID="Stations" Value="64" Type="UDINT" />
+    <Parameter ID="AsyncPayload" Value="80" Type="UDINT" />
+    <Parameter ID="Asymmetric" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="on" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="IF6.ST1" Hardware="X20DI6371">
+    <Parameter ID="HardwareModuleName" Value="X20DI6371" />
+  </Module>
+  <Module ID="IF6.ST1.IO" Hardware="X20DI6371">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="DigitalInputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST2" Hardware="X20DO6322">
+    <Parameter ID="HardwareModuleName" Value="X20DO6322" />
+  </Module>
+  <Module ID="IF6.ST2.IO" Hardware="X20DO6322">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="StatusInfo" Value="on" />
+    <Parameter ID="DigitalOutputsPacked" Value="off" />
+  </Module>
+  <Module ID="PS1" Hardware="X20PS9600">
+    <Parameter ID="HardwareModuleName" Value="X20PS9600" />
+  </Module>
+  <Module ID="PS1.IO" Hardware="X20PS9600">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="StatusInfo" Value="on" />
+    <Parameter ID="PowerInfo" Value="off" />
+  </Module>
+</IOCFG>

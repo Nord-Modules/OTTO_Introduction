@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map>
+  <Tag Name="Test_Variable2" Scope="OPC_UA">
+    <PV Name="Test_Variable2" Task="Server" DataType="boolean" IsVector="False" BitNumber="none" />
+  </Tag>
+  <Tag Name="Test_Variable1" Scope="OPC_UA">
+    <PV Name="Test_Variable1" Task="Server" DataType="boolean" IsVector="False" BitNumber="none" />
+  </Tag>
+</Map>

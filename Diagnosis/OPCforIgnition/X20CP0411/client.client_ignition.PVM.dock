@@ -1,0 +1,45 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=client 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=36 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                                 ErrorID                                    UDINT    0 "                                                    16#8005_0000"    0    7    1   16    1    0         
+                                      em                           Structure_type    0 "                                                               *"    0   24    1    0    1    1         
+                             description                               STRING[80]    0 "                                        'ERROR - being resolved'"    1    9   81    1    0    0         
+                            UA_Connect_0                               UA_Connect    0 "                                                               *"    0   24    1    0    1    1         
+                                 Execute                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                       ServerEndpointUrl                              STRING[255]    0 "                                     'opc.tcp://172.20.1.1:4096'"    1    9  256    1    0    0         
+                      SessionConnectInfo                     UASessionConnectInfo    0 "                                                               *"    1   24    1    0    0    1         
+                             SessionName                              STRING[255]    0 "                                            'PLC - Nord Modules'"    2    9  256    1    0    0         
+                         ApplicationName                              STRING[255]    0 "                                                              ''"    2    9  256    1    0    0         
+                         SecurityMsgMode                                     DINT    0 "                                                               1"    2    4    1   10    0    0 e,0,UASe
+
+                          SecurityPolicy                                     DINT    0 "                                                               1"    2    4    1   10    0    0 e,0,UASe
+
+                        CertificateStore                              STRING[255]    0 "                                                              ''"    2    9  256    1    0    0         
+                   ClientCertificateName                              STRING[255]    0 "                                                              ''"    2    9  256    1    0    0         
+                               ServerUri                              STRING[255]    0 "                                                              ''"    2    9  256    1    0    0         
+                  CheckServerCertificate                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                        TransportProfile                                     DINT    0 "                                                               1"    2    4    1   10    0    0 e,1,UATP
+
+                       UserIdentityToken                      UAUserIdentityToken    0 "                                                               *"    2   24    1    0    0    0         
+                   UserIdentityTokenType                                     DINT    0 "                                                               *"    3    4    1   10    0    0 e,0,UAUI
+
+                             TokenParam1                              STRING[255]    0 "                                                               *"    3    9  256    1    0    0         
+                             TokenParam2                              STRING[255]    0 "                                                               *"    3    9  256    1    0    0         
+                 VendorSpecificParameter                              STRING[255]    0 "                                                              ''"    2    9  256    1    0    0         
+                          SessionTimeout                                     TIME    0 "                                                           T#01m"    2   12    1    1    0    0         
+                       MonitorConnection                                     TIME    0 "                                                           T#50s"    2   12    1    1    0    0         
+                               LocaleIDs                          STRING[6][0..4]    0 "                                                               *"    2    9    7    0    0    1         
+                            LocaleIDs[0]                                STRING[6]    0 "                                                              ''"    3    9    7    1    0    0         
+                            LocaleIDs[1]                                STRING[6]    0 "                                                              ''"    3    9    7    1    0    0         
+                            LocaleIDs[2]                                STRING[6]    0 "                                                              ''"    3    9    7    1    0    0         
+                            LocaleIDs[3]                                STRING[6]    0 "                                                              ''"    3    9    7    1    0    0         
+                            LocaleIDs[4]                                STRING[6]    0 "                                                              ''"    3    9    7    1    0    0         
+                                 Timeout                                     TIME    0 "                                                           T#10s"    1   12    1    1    0    0         
+                           ConnectionHdl                                    DWORD    0 "                                                               0"    1   19    1   10    0    0        b
+                                    Done                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
+                                    Busy                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                   Error                                     BOOL    3 "                                                            TRUE"    1    1    1    2    0    0         
+                                 ErrorID                                    DWORD    0 "                                                      2147811328"    1   19    1   10    0    0        b
+                                  i_busy                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                   steps                                     DINT    0 "                                                              16"    0    4    1   10    1    0 e,0,Reta
+

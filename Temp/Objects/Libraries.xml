@@ -8,6 +8,18 @@
     UseAsStatic="false"
     Version="" />
   <Library
+    Name="AsOpcUac"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="" />
+  <Library
+    Name="AsOpcUas"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="" />
+  <Library
     Name="astime"
     IsDeployed="false"
     IsStatic="false"
@@ -27,7 +39,7 @@
     Version="" />
   <Library
     Name="standard"
-    IsDeployed="true"
+    IsDeployed="false"
     IsStatic="false"
     UseAsStatic="false"
     Version="" />

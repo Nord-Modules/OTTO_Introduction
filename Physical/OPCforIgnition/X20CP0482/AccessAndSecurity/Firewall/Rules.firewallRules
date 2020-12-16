@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="FirewallRules" Type="firewallRules">
+    <Property ID="TemplateID" Value="firewallRules" />
+    <Group ID="Rule[1]" Disabled="true">
+      <Selector ID="RuleMode" Disabled="true">
+        <Property ID="RuleString" Value="pass in quick proto tcp from any to 192.168.1.230/32 port = 4841" Disabled="true" />
+        <Property ID="Action" Value="pass" Disabled="true" />
+        <Property ID="Direction" Value="in" Disabled="true" />
+        <Property ID="Logging" Value="off" Disabled="true" />
+        <Property ID="Quick" Value="immediately" Disabled="true" />
+        <Selector ID="Interface" Value="none" Disabled="true" />
+        <Selector ID="Protocol" Value="tcp" Disabled="true">
+          <Selector ID="SPortOperator" Value="all" Disabled="true" />
+          <Selector ID="DPortOperator" Value="equal" Disabled="true">
+            <Property ID="DPortNumber" Value="4841" Disabled="true" />
+          </Selector>
+        </Selector>
+        <Selector ID="ResponseScheme" Value="none" Disabled="true" />
+        <Selector ID="SourceAddress" Value="any" Disabled="true" />
+        <Selector ID="DestinationAddress" Value="mustmatch" Disabled="true">
+          <Property ID="DIpAddress" Value="192.168.1.230" Disabled="true" />
+          <Property ID="DMask" Value="32" Disabled="true" />
+        </Selector>
+        <Selector ID="Group" Value="none" Disabled="true" />
+      </Selector>
+    </Group>
+    <Group ID="Rule[2]" Disabled="true">
+      <Selector ID="RuleMode" Disabled="true">
+        <Property ID="RuleString" Value="pass out quick proto tcp from any port = 0 to 192.168.1.230/32 port = 4841" Disabled="true" />
+        <Property ID="Action" Value="pass" Disabled="true" />
+        <Property ID="Direction" Value="out" Disabled="true" />
+        <Property ID="Logging" Value="off" Disabled="true" />
+        <Property ID="Quick" Value="immediately" Disabled="true" />
+        <Selector ID="Interface" Value="none" Disabled="true" />
+        <Selector ID="Protocol" Value="tcp" Disabled="true">
+          <Selector ID="SPortOperator" Value="equal" Disabled="true">
+            <Property ID="SPortNumber" Value="0" Disabled="true" />
+          </Selector>
+          <Selector ID="DPortOperator" Value="equal" Disabled="true">
+            <Property ID="DPortNumber" Value="4841" Disabled="true" />
+          </Selector>
+        </Selector>
+        <Selector ID="ResponseScheme" Value="none" Disabled="true" />
+        <Selector ID="SourceAddress" Value="any" Disabled="true" />
+        <Selector ID="DestinationAddress" Value="mustmatch" Disabled="true">
+          <Property ID="DIpAddress" Value="192.168.1.230" Disabled="true" />
+          <Property ID="DMask" Value="32" Disabled="true" />
+        </Selector>
+        <Selector ID="Group" Value="none" Disabled="true" />
+      </Selector>
+    </Group>
+  </Element>
+</Configuration>

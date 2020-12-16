@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\opcuamap\opcuamap.uar.gz">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\opcforignition\x20cp0482\opcuamap\opcuamap.uar.gz".</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+</BuildReasons>

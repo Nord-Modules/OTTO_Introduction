@@ -1,0 +1,3 @@
+OTTO | OPCforIgnition | Build
+BR.AS.BuildFrame.exe, Error = False. Call = BR.AS.BuildFrame.exe "C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\Connectivity\OpcUA\OpcUaMap.uad" -o "C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\OPCforIgnition\X20CP0482\OpcUaMap\OpcUaMap.uar.gz" -H "C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\Hardware.hw" -B A4.73 -c OPCforIgnition -P "C:\Users\mafio\Documents\GitHub\OTTO_Introduction" 
+mingw32-make.exe, Error = False. Call = mingw32-make.exe  -r -f "C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\OPCforIgnition\X20CP0482\#cpu_tp.mak" -k

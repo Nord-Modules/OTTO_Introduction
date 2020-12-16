@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="A4.73">
+  <NamespaceUris>
+    <Uri>http://inductiveautomation.com/products/ignitionopc/</Uri>
+  </NamespaceUris>
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x015F" />
+        <ACE RoleId="3" RoleName="ReadWrite" Access="0x015F" />
+        <ACE RoleId="1" RoleName="Administrator" Access="0x015F" />
+      </ACL>
+      <ACL Id="4">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x017F" />
+        <ACE RoleId="3" RoleName="ReadWrite" Access="0x017F" />
+        <ACE RoleId="1" RoleName="Administrator" Access="0x017F" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView AclId="4">
+    <Module Name="&lt;Default&gt;">
+      <Task WriteMask="4" Name="Server">
+        <Variable Name="Test_Variable1" />
+        <Variable Name="Test_Variable2" />
+        <Variable Name="Test_Variable3" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

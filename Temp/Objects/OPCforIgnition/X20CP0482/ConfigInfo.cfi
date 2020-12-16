@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.7.2.98"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1">
+    <Task
+      Name="Client"
+      Disable="true"
+      Source="OPC_UA.Client"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\OPCforIgnition\X20CP0482\Client\client_ignition.st.var" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\OPC_UA\Client\Types.typ" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\OPC_UA\Client\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Server"
+      Disable="false"
+      Source="OPC_UA.Server"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\OPCforIgnition\X20CP0482\Server\Cyclic.ab.var" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\OPC_UA\Server\Types.typ" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\OPC_UA\Server\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

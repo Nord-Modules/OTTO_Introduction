@@ -1,0 +1,5 @@
+VAR
+	Test_Variable1 : BOOL;
+	Test_Variable2 : BOOL;
+	Test_Variable3 : BOOL;
+END_VAR

@@ -1,0 +1,5 @@
+VAR_CONFIG
+	::Server:Test_Variable1 AT %QX."X20DO6322".DigitalOutput03;
+	::Server:Test_Variable2 AT %QX."X20DO6322".DigitalOutput04;
+	::Server:Test_Variable3 AT %QX."X20DO6322".DigitalOutput05;
+END_VAR

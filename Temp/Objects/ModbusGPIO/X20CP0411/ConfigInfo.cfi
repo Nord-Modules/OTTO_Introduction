@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.7.2.98"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1">
+    <Task
+      Name="Handshake"
+      Disable="true"
+      Source="Handshake"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\Config1\X20CP0411\Handshake\handshake.st.var" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Handshake\Types.typ" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Handshake\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Modbus"
+      Disable="true"
+      Source="Modbus"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\Config1\X20CP0411\Modbus\modbus.st.var" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Modbus\Types.typ" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\Modbus\Variables.var" />
+    </Task>
+    <Task
+      Name="client"
+      Disable="false"
+      Source="OPC_UA.client"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\Config1\X20CP0411\client\client_ignition.st.var" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\OPC_UA\client\Types.typ" />
+      <File
+        Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Logical\OPC_UA\client\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

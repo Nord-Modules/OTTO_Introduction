@@ -2,6 +2,7 @@
 <?AutomationStudio Version=4.7.2.98?>
 <Physical xmlns="http://br-automation.co.at/AS/Physical">
   <Objects>
-    <Object Type="Configuration">Config1</Object>
+    <Object Type="Configuration">ModbusGPIO</Object>
+    <Object Type="Configuration">OPCforIgnition</Object>
   </Objects>
 </Physical>

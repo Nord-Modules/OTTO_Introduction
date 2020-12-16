@@ -1,0 +1,93 @@
+VAR
+	ConnectionHdl : DWORD := 0;
+	steps : opc_steps;
+	em : Structure_type;
+	ExecuteConnect_0 : BOOL;
+	ExecuteConnectionGetStatus_0 : BOOL;
+	ExecuteDisconnect_0 : BOOL;
+	ExecuteGetnamespaceindex_0 : BOOL;
+	ExecuteNodeGetHandleList_0 : BOOL;
+	ExecuteNodeGetHandle_0 : BOOL;
+	ExecuteNodeReleaseHandleList_0 : BOOL;
+	ExecuteNodeReleaseHandle_0 : BOOL;
+	ExecuteSubscriptionCreate_0 : BOOL;
+	ExecuteSubscriptionDelete_0 : BOOL;
+	ExecuteMonitoredItemAdd_0 : BOOL;
+	ExecuteMonitoredItemAddList_0 : BOOL;
+	ExecuteMonitoredItemOperate_0 : BOOL;
+	ExecuteMonitoredItemRemove_0 : BOOL;
+	ExecuteReadList_0 : BOOL;
+	ExecuteRead_0 : BOOL;
+	ExecuteWriteList_0 : BOOL;
+	ExecuteWrite_0 : BOOL;
+	NamespaceIndex : UINT := 0;
+	NodeAddInfos_W : ARRAY[0..MAX_INDEX_NODELIST] OF UANodeAdditionalInfo;
+	NodeAddInfos_R : ARRAY[0..MAX_INDEX_NODELIST] OF UANodeAdditionalInfo;
+	NodeAddInfos_0 : ARRAY[0..MAX_INDEX_MONITORLIST] OF UANodeAdditionalInfo;
+	NodeAddInfo_0 : UANodeAdditionalInfo;
+	SubscriptionHdl : DWORD := 0;
+	MonitoredItemHdl : DWORD;
+	MonitoredItemHdls : ARRAY[0..MAX_INDEX_NODELIST] OF DWORD;
+	NodeHdl : DWORD := 0;
+	NodeHdlCount : UINT := 0;
+	NodeHdls_W : ARRAY[0..MAX_INDEX_NODELIST] OF DWORD; (*NodeIDs_0 : ARRAY [0..MAX_INDEX_NODELIST] OF UANodeID;
+ARRAY [0..MAX_INDEX_NODELIST]*)
+	NodeHdls_R : ARRAY[0..MAX_INDEX_NODELIST] OF DWORD; (*NodeIDs_0 : ARRAY [0..MAX_INDEX_NODELIST] OF UANodeID;
+ARRAY [0..MAX_INDEX_NODELIST]*)
+	NodeHdls : ARRAY[0..MAX_INDEX_MONITORLIST] OF DWORD; (*NodeIDs_0 : ARRAY [0..MAX_INDEX_NODELIST] OF UANodeID;
+ARRAY [0..MAX_INDEX_NODELIST]*)
+	NodeIDs_R : ARRAY[0..MAX_INDEX_NODELIST] OF UANodeID; (*NodeIDs_0 : ARRAY [0..MAX_INDEX_NODELIST] OF UANodeID;
+ARRAY [0..MAX_INDEX_NODELIST]*)
+	NodeIDs_W : ARRAY[0..MAX_INDEX_NODELIST] OF UANodeID; (*NodeIDs_0 : ARRAY [0..MAX_INDEX_NODELIST] OF UANodeID;
+ARRAY [0..MAX_INDEX_NODELIST]*)
+	NodeIDs_0 : ARRAY[0..MAX_INDEX_NODELIST] OF UANodeID; (*NodeIDs_0 : ARRAY [0..MAX_INDEX_NODELIST] OF UANodeID;
+ARRAY [0..MAX_INDEX_NODELIST]*)
+	NodeCount_R : USINT;
+	NodeCount_W : USINT;
+	NodeID_0 : UANodeID;
+	NodeErrorIDs : ARRAY[0..MAX_INDEX_MONITORLIST] OF DWORD;
+	ErrorID : UDINT;
+	SessionConnectInfo_0 : UASessionConnectInfo;
+	UA_Connect_0 : UA_Connect;
+	UA_ConnectionGetStatus_0 : UA_ConnectionGetStatus;
+	UA_Disconnect_0 : UA_Disconnect;
+	UA_GetNamespaceIndex_0 : UA_GetNamespaceIndex;
+	UA_NodeGetHandleList_R : UA_NodeGetHandleList;
+	UA_NodeGetHandleList_W : UA_NodeGetHandleList;
+	UA_NodeGetHandleList_0 : UA_NodeGetHandleList;
+	UA_NodeGetHandle_0 : UA_NodeGetHandle;
+	UA_NodeReleaseHandleList_R : UA_NodeReleaseHandleList;
+	UA_NodeReleaseHandleList_W : UA_NodeReleaseHandleList;
+	UA_NodeReleaseHandleList_0 : UA_NodeReleaseHandleList;
+	UA_NodeReleaseHandle_0 : UA_NodeReleaseHandle;
+	UA_ReadList_0 : UA_ReadList;
+	UA_SubscriptionCreate_0 : UA_SubscriptionCreate;
+	UA_MonitoredItemAdd_0 : UA_MonitoredItemAdd;
+	UA_MonitoredItemAddList_0 : UA_MonitoredItemAddList;
+	UA_MonitoredItemOperateList_0 : UA_MonitoredItemOperateList;
+	UA_MonitoredItemHdls : ARRAY[0..MAX_INDEX_MONITORLIST] OF DWORD;
+	UA_MonitoredItemRemoveList_0 : UA_MonitoredItemRemoveList;
+	UA_SubscriptionDelete_0 : UA_SubscriptionDelete;
+	MonitoringSettings_1 : UAMonitoringSettings;
+	MonitoringSettings_0 : ARRAY[0..MAX_INDEX_MONITORLIST] OF UAMonitoringParameters;
+	UA_Read_0 : UA_Read;
+	UA_WriteList_0 : UA_WriteList;
+	UA_Write_0 : UA_Write;
+	TimeStamps_0 : ARRAY[0..MAX_INDEX_MONITORLIST] OF DATE_AND_TIME;
+	NodeQualityIDs_0 : ARRAY[0..MAX_INDEX_MONITORLIST] OF DWORD;
+	RemainingValueCount_0 : ARRAY[0..MAX_INDEX_MONITORLIST] OF UINT;
+	ValuesChanged_0 : ARRAY[0..MAX_INDEX_MONITORLIST] OF BOOL;
+	Published : BOOL;
+	PublishingEnable : BOOL;
+	PublishingInterval : TIME;
+	ConnectionStatus : UAConnectionStatus;
+	ServiceLevel : BYTE;
+	ServerState : UAServerState;
+	Variable_0 : STRING[255];
+	Variables_0 : ARRAY[0..MAX_INDEX_MONITORLIST] OF STRING[255];
+	Variables_Rd0 : ARRAY[0..MAX_INDEX_NODELIST] OF STRING[255];
+	Variables_Wr0 : ARRAY[0..MAX_INDEX_NODELIST] OF STRING[255];
+	Variable_Rd0 : ARRAY[0..MAX_INDEX_NODELIST] OF STRING[255];
+	Variable_Wr0 : STRING[255];
+	I : USINT;
+END_VAR

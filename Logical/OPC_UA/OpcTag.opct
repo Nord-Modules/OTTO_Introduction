@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tags>
+  <Tag Type="BOOLEAN" Name="Test_Variable1" Description="" SourceVariable="Test_Variable1" SourceProgram="OPC_UA.Server" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="False" IsArrayElement="False" Index="0" />
+    <Access IsProtected="False" Read="True" Write="True" />
+    <Values Manual="False" ManualValue="" />
+  </Tag>
+  <Tag Type="BOOLEAN" Name="Test_Variable2" Description="" SourceVariable="Test_Variable2" SourceProgram="OPC_UA.Server" SourceDatatype="BOOL" SourceDerivationBaseDatatype="BOOL">
+    <Format IsVector="False" IsArrayElement="False" Index="0" />
+    <Access IsProtected="False" Read="True" Write="True" />
+    <Values Manual="False" ManualValue="" />
+  </Tag>
+</Tags>

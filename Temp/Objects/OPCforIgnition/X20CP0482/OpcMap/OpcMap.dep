@@ -1,0 +1,11 @@
+$(AS_PROJECT_PATH)/Logical/OPC_UA/OpcTag.opct
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Libraries/operator/operator.var
+$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var
+$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.var
+$(AS_PROJECT_PATH)/Logical/Libraries/astime/astime.var
+$(AS_PROJECT_PATH)/Logical/Libraries/AsIecCon/AsIecCon.var
+$(AS_PROJECT_PATH)/Logical/Libraries/AsOpcUac/AsOpcUac.var
+$(AS_PROJECT_PATH)/Logical/Libraries/AsOpcUas/AsOpcUas.var
+$(AS_PROJECT_PATH)/Logical/OPC_UA/Variables.var
+$(AS_PROJECT_PATH)/Logical/OPC_UA/Server/Variables.var

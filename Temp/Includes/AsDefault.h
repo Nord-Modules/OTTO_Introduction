@@ -11,7 +11,9 @@ extern "C"
 	#include <runtime.h>
 	#include <standard.h>
 	#include <astime.h>
+	#include <AsOpcUac.h>
 	#include <AsIecCon.h>
+	#include <AsOpcUas.h>
 #ifdef __cplusplus
 };
 #endif
