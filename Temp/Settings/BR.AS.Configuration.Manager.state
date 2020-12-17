@@ -9,25 +9,11 @@
       <Column Index="3" Width="0" Position="3" />
     </Columns>
     <ExpandedNodes>
-      <ExpandedNode Row="0" />
-      <ExpandedNode Row="5" />
-      <ExpandedNode Row="8" />
-      <ExpandedNode Row="13" />
-      <ExpandedNode Row="14" />
-      <ExpandedNode Row="19" />
-      <ExpandedNode Row="20" />
-      <ExpandedNode Row="23" />
-      <ExpandedNode Row="24" />
-      <ExpandedNode Row="25" />
-      <ExpandedNode Row="27" />
-      <ExpandedNode Row="29" />
-      <ExpandedNode Row="30" />
-      <ExpandedNode Row="33" />
-      <ExpandedNode Row="36" />
+      <ExpandedNode Row="35" />
       <ExpandedNode Row="38" />
     </ExpandedNodes>
     <SelectedNodes>
-      <SelectedNode Row="45" />
+      <SelectedNode Row="39" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>

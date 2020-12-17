@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?AutomationRuntimeIOSystem Version = 2.5.0.7?>
 <ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
-  <Module ID="$root" Hardware="X20BB52" HardwareModuleName="X20CP0482" ModuleID="17">
+  <Module ID="$root" Hardware="X20BB52" HardwareModuleName="X20CP0482" ModuleID="20">
     <Channel ID="SerialNumber_CPU" Description="Serial number of CPU board" Ext="/HW" Address="0" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="HwGetSerialNumber" Sig_St_Udint="1" />
     <Channel ID="ModuleID_CPU" Description="Module ID of CPU board" Ext="/HW" Address="1" Direction="IN" Type="UINT" ChannelType="ModuleIDCpu" Sig_St_Uint="1" />
     <Channel ID="HardwareVariant" Description="Hardware variant" Ext="/HW" Address="2" Direction="IN" Type="UINT" ChannelType="HardwareVariant" Sig_St_Uint="1" />
@@ -11,7 +11,7 @@
     <Channel ID="SystemTime" Description="System time at the start of the current task cycle [µs]" Ext="/HW" Address="6" Direction="IN" Type="DINT" Sig_St_Dint="1" ChannelType="SystemTime" />
     <Channel ID="IF3.LinkOk" Description="Link state" Ext="/INFO" Address="0x8000001A" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
   </Module>
-  <Module ID="IF2.ST1" Hardware="OpcUa_any" HardwareModuleName="OpcUa_any" ModuleID="1">
+  <Module ID="IF2.ST1" Hardware="OpcUa_any" HardwareModuleName="OpcUa_any" ModuleID="4">
     <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Direction="IN" Type="BOOL" Sig_St_Bool="1" ArConfig="true" />
     <Channel ID="ConnectionLostCount" Description="Connection errors since last boot" BrowsePath="internal" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
     <Channel ID="ClientErrorCount" Description="Error counter for general client errors" BrowsePath="internal" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
@@ -29,7 +29,31 @@
     <Channel ID="CurrentSubscriptionCount" Description="The number of subscriptions currently established in the server" BrowsePath="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:CurrentSubscriptionCount" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
     <Channel ID="CumulatedSubscriptionCount" Description="The cumulative number of subscriptions that have been established in the server since the server was started" BrowsePath="/0:Root/0:Objects/0:Server/0:ServerDiagnostics/0:ServerDiagnosticsSummary/0:CumulatedSubscriptionCount" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
   </Module>
-  <Module ID="$root" Hardware="X20BB52" HardwareModuleName="X20BB52" ModuleID="4">
+  <Module ID="IF2.ST2" Hardware="ModbusTcp_any" HardwareModuleName="ModbusTcp_any" ModuleID="1" Simulatable="true">
+    <Channel ID="ModuleOk" Description="Module state (1 = module operational)" Description-de="Modulstatus (1 = Modul betriebsbereit)" Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ActInternalError" Description="Current slave error is an internal error." Description-de="Aktueller Fehler ist ein interner Fehler." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ActConfError" Description="Current slave error is a configuration error." Description-de="Aktueller Fehler ist ein Konfigurationsfehler." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ActOverloadError" Description="Current slave error is an overlaod error." Description-de="Aktueller Fehler ist ein Überladungsfehler." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ActModbusError" Description="Current slave error is a MODBUS error." Description-de="Aktueller Fehler ist ein MODBUS Fehler." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ActSlvConError" Description="Current slave error is a connection error." Description-de="Aktueller Fehler ist ein Verbindungsfehler." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ActRefreshError" Description="Current slave error is a refresh error." Description-de="Aktueller Fehler ist ein Aktualisierungsfehler." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ModSlaveState" Description="Modbus slave driver state." Description-de="Status des Modbus Slavetreibers." Ext="/HW" Direction="IN" Type="UINT" />
+    <Channel ID="ModbusErrorLast" Description="Last Modbus error of this slave." Description-de="Zuletzt aufgetretener Modbus-Fehler dieses Slaves." Ext="/HW" Direction="IN" Type="UINT" />
+    <Channel ID="LastErrBlockNr" Description="Block number of last timeout error." Description-de="Blocknummer, bei der der letzte Timeout Fehler aufgetreten ist." Ext="/HW" Direction="IN" Type="UINT" />
+    <Channel ID="ModbusSlaveDiag" Description="Activate general slave diagnostics." Description-de="Aktiviere allgemeine Slavediagnosekanäle." Ext="/HW" Direction="OUT" Type="BOOL" />
+    <Channel ID="HistInternalError" Description="Last error since last reset was an internal error." Description-de="Interner Fehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="HistConfError" Description="Last error since last reset was a configuration error." Description-de="Konfigurationsfehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="HistOverloadError" Description="Last error since last reset was an overload error." Description-de="Überladungsfehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="HistModbusError" Description="Last error since last reset was a MODBUS error." Description-de="MODBUS Fehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="HistSlvConError" Description="Last error since last reset was a connection error." Description-de="Verbindungsfehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="HistRefreshError" Description="Last error since last reset was a refresh error." Description-de="Aktualisierungsfehler seit dem letzten Reset." Ext="/HW" Direction="IN" Type="BOOL" />
+    <Channel ID="ModbusErrorCnt" Description="Counter of Modbus error of this slave." Description-de="Zähler, wie oft ein Modbus-Fehler dieses Slaves auftrat." Ext="/HW" Direction="IN" Type="UINT" />
+    <Channel ID="ModbusConErrorCnt" Description="Counter of Modbus connection error of this slave." Description-de="Zähler, wie oft ein erfolgloser Verbindungsaufbauversuch zu diesem Slave auftrat." Ext="/HW" Direction="IN" Type="UINT" />
+    <Channel ID="ModbusPktRefreshTimeoutCnt" Description="Counter of refresh time out." Description-de="Zähler, wie oft der Refresh Timer überschritten wurde." Ext="/HW" Direction="IN" Type="UINT" />
+    <Channel ID="ModbusPktPendPerSec" Description="Pending packages per second." Description-de="Ausstehende Modbus-Pakete pro Sekunde." Ext="/HW" Direction="IN" Type="UINT" />
+    <Channel ID="ModbusMeanResponseTime" Description="Mean Modbus response time of this slave [ms]." Description-de="Durschnittliche Modbus Antwortszeit dieses Slaves [ms]." Ext="/HW" Direction="IN" Type="UINT" />
+  </Module>
+  <Module ID="$root" Hardware="X20BB52" HardwareModuleName="X20BB52" ModuleID="7">
     <Channel ID="ModuleID_BB" Description="Module ID bus base" Ext="/HW" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="ModuleID" />
     <Channel ID="IF6.CycleCount" Description="Number of bus cycles" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
     <Channel ID="IF6.BreakCount" Description="Number of bus cycles with set break signal" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
@@ -61,7 +85,7 @@
     <Channel ID="IF6.AsyncFrameSpareSize" Description="Size reserve within asynchronous frame [Bytes]" FromVersion="A3.08" Ext="/INFO" Address="0x8000011B" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
     <Channel ID="IF6.BusLengthConfigured" Description="Configured bus length [m]" FromVersion="A3.08" Ext="/INFO" Address="0x8000011C" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
   </Module>
-  <Module ID="IF6.ST1" Hardware="X20DI6371" HardwareModuleName="X20DI6371" ModuleID="23" Simulatable="true">
+  <Module ID="IF6.ST1" Hardware="X20DI6371" HardwareModuleName="X20DI6371" ModuleID="26" Simulatable="true">
     <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="SerialNumber" Description="Serial number" FromVersion="A3.08" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
     <Channel ID="ModuleID" Description="Module ID" FromVersion="A3.08" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1" />
@@ -87,7 +111,7 @@
     <Channel ID="ModuleCommError" Description="Number of communication errors to IO processor on IO module" FromVersion="A3.08" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
     <Channel ID="ModuleCommErrorChangeTime" Description="Time of last change of channel ModuleCommError" FromVersion="A3.08" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Sig_St_Dt="1" Diagnose="/DIAG" />
   </Module>
-  <Module ID="IF6.ST2" Hardware="X20DO6322" HardwareModuleName="X20DO6322" ModuleID="26" Simulatable="true">
+  <Module ID="IF6.ST2" Hardware="X20DO6322" HardwareModuleName="X20DO6322" ModuleID="29" Simulatable="true">
     <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="SerialNumber" Description="Serial number" FromVersion="A3.08" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
     <Channel ID="ModuleID" Description="Module ID" FromVersion="A3.08" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1" />
@@ -119,7 +143,7 @@
     <Channel ID="ModuleCommError" Description="Number of communication errors to IO processor on IO module" FromVersion="A3.08" Ext="/INFO" Address="0x80000186" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
     <Channel ID="ModuleCommErrorChangeTime" Description="Time of last change of channel ModuleCommError" FromVersion="A3.08" Ext="/INFO" Address="0xC0000186" Direction="IN" Type="DATE_AND_TIME" Sig_St_Dt="1" Diagnose="/DIAG" />
   </Module>
-  <Module ID="PS1" Hardware="X20PS9600" HardwareModuleName="X20PS9600" ModuleID="29">
+  <Module ID="PS1" Hardware="X20PS9600" HardwareModuleName="X20PS9600" ModuleID="32">
     <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="SerialNumber" Description="Serial number" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
     <Channel ID="ModuleID" Description="Module ID" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1" />

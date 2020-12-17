@@ -4,7 +4,6 @@
   <Objects>
     <Object Type="File" Private="true">Variables.var</Object>
     <Object Type="File" Private="true">Types.typ</Object>
-    <Object Type="Program" Language="IEC">Client</Object>
     <Object Type="Program" Language="IEC">Server</Object>
     <Object Type="File">OpcTag.opct</Object>
   </Objects>

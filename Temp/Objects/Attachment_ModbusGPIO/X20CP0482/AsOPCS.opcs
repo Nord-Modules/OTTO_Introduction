@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServerConfig Name="AsOPCS.opcs" BuildDate="17/12/2020 11:09:12" Version="3.0.80" VersionDate="04/02/2009">
+  <TagPwd Pwd="" />
+  <CommunicationPaths CommunicationTimeout="" RetryTime="" InitParam="">
+    <Connection Name="@/Pvi" Type="Pvi" ObjectDescriptor="" />
+    <Connection Name="@/Pvi/LNINA2" Type="Line" ObjectDescriptor="CD=LNINA2" />
+    <Connection Name="@/Pvi/LNINA2/Attachment_ModbusGPIO" Type="Device" ObjectDescriptor="CD=&quot;/IF=tcpip&quot;" />
+    <Connection Name="@/Pvi/LNINA2/Attachment_ModbusGPIO/X20CP0482" Type="Station" ObjectDescriptor="CD=X20CP0482" />
+    <Connection Name="@/Pvi/LNINA2/Attachment_ModbusGPIO/X20CP0482/CPU" Type="Cpu" ObjectDescriptor="CD=&quot;/COMT=2500&quot;" />
+  </CommunicationPaths>
+  <LimitAlarms />
+  <DigitalAlarms />
+  <CustomProperties />
+  <OpcItems>
+    <Group Name="OPC_UA">
+      <Item Name="Test_Variable1">
+        <OPC Name="OPC_UA.Test_Variable1" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+        <PVI Name="@/Pvi/LNINA2/Attachment_ModbusGPIO/X20CP0482/CPU/Test_Variable1" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Test_Variable1 AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+      </Item>
+      <Item Name="Test_Variable2">
+        <OPC Name="OPC_UA.Test_Variable2" Type="BOOL" IsVector="false" ElementCount="1" ElementAddress="false" AccessRights="read/write" WriteResponse="true" IsManual="false" ManualValue="" IsProtected="false" />
+        <PVI Name="@/Pvi/LNINA2/Attachment_ModbusGPIO/X20CP0482/CPU/Test_Variable2" Type="Pvar" ObjectDescriptor="VT=boolean VN=1 VL=1 CD=Test_Variable2 AT=rw RF=1000" LinkDescriptor="VT=boolean VN=1 VL=1 CM=0 LT=raw" AccessType="DATA" />
+      </Item>
+    </Group>
+  </OpcItems>
+</ServerConfig>

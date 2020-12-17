@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1605259019_1_
-#define _BUR_1605259019_1_
+#ifndef _BUR_1608211446_1_
+#define _BUR_1608211446_1_
 
 #include <bur/plctypes.h>
 
@@ -14,6 +14,8 @@
 
 /* Variables */
 _BUR_LOCAL struct modbus_type modbus;
+_BUR_LOCAL struct io_type io;
+_BUR_LOCAL unsigned short counter;
 
 
 
@@ -29,5 +31,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Modbus/Variables.var\\\" scope \\\"local\\
 __asm__(".previous");
 
 
-#endif /* _BUR_1605259019_1_ */
+#endif /* _BUR_1608211446_1_ */
 

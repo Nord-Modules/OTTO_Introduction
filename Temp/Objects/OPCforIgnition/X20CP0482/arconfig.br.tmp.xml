@@ -129,6 +129,128 @@
       <Parameter ID="Sig_St_Udint" Value="1" />
     </Channel>
   </Module>
+  <Module ID="IF2.ST2" Hardware="ModbusTcp_any">
+    <Parameter ID="HardwareModuleName" Value="ModbusTcp_any" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="IpAddress" Value="192.168.1.7" />
+    <Parameter ID="UnitId" Value="0" Type="INT" />
+    <Parameter ID="TcpPort" Value="502" Type="UINT" />
+    <Parameter ID="NumPendReq" Value="1" Type="INT" />
+    <Parameter ID="Response" Value="1500" Type="INT" />
+    <Parameter ID="PnpTimer" Value="10" Type="INT" />
+    <Parameter ID="ResetOutputs" Value="off" />
+    <Parameter ID="NumBlocks" Value="-1" Type="INT" />
+    <Channel ID="ModuleOk">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ActInternalError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ActConfError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ActOverloadError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ActModbusError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ActSlvConError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ActRefreshError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ModSlaveState">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="ModbusErrorLast">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="LastErrBlockNr">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="ModbusSlaveDiag">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HistInternalError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HistConfError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HistOverloadError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HistModbusError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HistSlvConError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HistRefreshError">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ModbusErrorCnt">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="ModbusConErrorCnt">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="ModbusPktRefreshTimeoutCnt">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="ModbusPktPendPerSec">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="ModbusMeanResponseTime">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+  </Module>
   <Module ID="IF3" Hardware="X20BB52">
     <Parameter ID="Operation" Value="EthOnly" />
     <Parameter ID="MtuSize" Value="1500" Type="UDINT" />

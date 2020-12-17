@@ -1,0 +1,13 @@
+VAR_CONFIG
+	::Handshake:io.handshake.ROBOT_ENABLE AT %QX."X20DO6322".DigitalOutput01;
+	::Handshake:io.handshake.PA_FAULT_STATUS AT %QX."X20DO6322".DigitalOutput02;
+	::Handshake:io.LED AT %QX."X20DO6322".DigitalOutput06;
+	::Handshake:io.handshake.PA_ENABLE AT %IX."X20DI6371".DigitalInput01 INVERSE;
+	::Modbus:modbus.Mission_create_0 AT %IW."X20CP0482".IF2.Mission_create_0;
+	::Modbus:modbus.Create_mission_1 AT %IW."X20CP0482".IF2.Mission_create_1;
+	::Modbus:modbus.Attachment_Type AT %QW."ModbusTcp_any".attachment_type;
+	::Modbus:modbus.Safe_to_Move AT %IX."ModbusTcp_any".safe_to_move;
+	::Modbus:modbus.Mission_create_0 AT %QW."ModbusTcp_any".mission_create_0;
+	::Modbus:modbus.Create_mission_1 AT %IO."X20CP0482".IF2.Mission_create_1;
+	::Modbus:io.Mission_startButton AT %IX."X20DI6371".DigitalInput02;
+END_VAR

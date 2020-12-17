@@ -9,5 +9,5 @@
   AutomationStudioVersion="4.7.2.98"
   AutomationStudioEdition="Standard"
   BuildCrossReference="false"
-  ActiveConfiguration="OPCforIgnition"
+  ActiveConfiguration="ModbusForIgnition"
   CreateAnsiCDeclarations="false" />

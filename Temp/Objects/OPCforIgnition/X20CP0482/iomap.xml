@@ -74,6 +74,72 @@
 <LN ID="%ID.IF2.ST1.CumulatedSubscriptionCount" Type="UDINT">
 <Prod Device="IF2.ST1" DPName="CumulatedSubscriptionCount" Kind="io"/>
 </LN>
+<LN ID="%IX.IF2.ST2.ModuleOk" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.ActInternalError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="ActInternalError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.ActConfError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="ActConfError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.ActOverloadError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="ActOverloadError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.ActModbusError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="ActModbusError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.ActSlvConError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="ActSlvConError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.ActRefreshError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="ActRefreshError" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.ModSlaveState" Type="UINT">
+<Prod Device="IF2.ST2" DPName="ModSlaveState" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.ModbusErrorLast" Type="UINT">
+<Prod Device="IF2.ST2" DPName="ModbusErrorLast" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.LastErrBlockNr" Type="UINT">
+<Prod Device="IF2.ST2" DPName="LastErrBlockNr" Kind="io"/>
+</LN>
+<LN ID="%QX.IF2.ST2.ModbusSlaveDiag" Type="BOOL">
+<Cons Device="IF2.ST2" DPName="ModbusSlaveDiag" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.HistInternalError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="HistInternalError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.HistConfError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="HistConfError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.HistOverloadError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="HistOverloadError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.HistModbusError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="HistModbusError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.HistSlvConError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="HistSlvConError" Kind="io"/>
+</LN>
+<LN ID="%IX.IF2.ST2.HistRefreshError" Type="BOOL">
+<Prod Device="IF2.ST2" DPName="HistRefreshError" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.ModbusErrorCnt" Type="UINT">
+<Prod Device="IF2.ST2" DPName="ModbusErrorCnt" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.ModbusConErrorCnt" Type="UINT">
+<Prod Device="IF2.ST2" DPName="ModbusConErrorCnt" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.ModbusPktRefreshTimeoutCnt" Type="UINT">
+<Prod Device="IF2.ST2" DPName="ModbusPktRefreshTimeoutCnt" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.ModbusPktPendPerSec" Type="UINT">
+<Prod Device="IF2.ST2" DPName="ModbusPktPendPerSec" Kind="io"/>
+</LN>
+<LN ID="%IW.IF2.ST2.ModbusMeanResponseTime" Type="UINT">
+<Prod Device="IF2.ST2" DPName="ModbusMeanResponseTime" Kind="io"/>
+</LN>
 <LN ID="%IW.ModuleID_BB" Type="UINT">
 <Prod Device="$root" DPName="ModuleID_BB" Kind="io"/>
 </LN>

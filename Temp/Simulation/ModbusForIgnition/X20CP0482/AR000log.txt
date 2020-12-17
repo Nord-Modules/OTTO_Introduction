@@ -1,0 +1,21 @@
+Thu Dec 17 14:26:23 2020
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Thu Dec 17 14:26:23 2020
+No ARsim registration found!
+
+Thu Dec 17 14:26:23 2020
+InstanceName: 01d6d47836df82b0
+
+Thu Dec 17 14:26:23 2020
+WorkingDirectory: C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Simulation\ModbusForIgnition\X20CP0482\
+
+Thu Dec 17 14:26:23 2020
+COMMAND_COLDSTART
+
+Thu Dec 17 14:26:25 2020
+Version: A4.73
+
+Thu Dec 17 14:26:55 2020
+COMMAND_TERMINATE
+

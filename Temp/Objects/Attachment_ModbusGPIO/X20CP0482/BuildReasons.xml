@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\arconfig.br">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\handshake\handshake.st.c">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\handshake\handshake.st.c".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\modbus\modbus.st.c">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\modbus\modbus.st.c".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\ashwac.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\ashwac.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\modbus\modbus.st.o">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\modbus\modbus.st.o".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\handshake\handshake.st.o">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\handshake\handshake.st.o".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\handshake\_bur_pvdef.st.c">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\handshake\_bur_pvdef.st.c".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\modbus\_bur_pvdef.st.c">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\modbus\_bur_pvdef.st.c".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\modbus\_bur_pvdef.st.o">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\modbus\_bur_pvdef.st.o".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\handshake\_bur_pvdef.st.o">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\handshake\_bur_pvdef.st.o".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\modbus\a.out">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\modbus\a.out".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\handshake\a.out">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\handshake\a.out".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\modbus\modbus.ox">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\modbus\modbus.ox".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\udbdef.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\udbdef.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\tcdata\tcdata.imx">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\tcdata\tcdata.imx".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\handshake\handshake.ox">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\handshake\handshake.ox".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\handshake.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\handshake.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\modbus.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\modbus.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\asopcs.opcs">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\asopcs.opcs".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\standard.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\standard.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\runtime.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\runtime.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\asopcuac.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\asopcuac.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\role.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\role.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\user.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\user.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\fwrules.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\fwrules.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\iomap.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\iomap.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\sysconf.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\sysconf.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\tcdata\tcdata.s18d">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\tcdata\tcdata.s18d".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\asfw.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\asfw.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\ashwd.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\ashwd.br".</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\attachment_modbusgpio\x20cp0482\tcdata.br">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\attachment_modbusgpio\x20cp0482\tcdata.br".</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\attachment_modbusgpio\x20cp0482\transfer.lst">
+    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\binaries\attachment_modbusgpio\x20cp0482\transfer.lst".</BuildReason>
+  </Rule>
+</BuildReasons>

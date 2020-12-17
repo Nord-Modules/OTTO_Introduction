@@ -1,3 +1,5 @@
 VAR
+	counter : UINT;
+	io : io_type;
 	modbus : modbus_type;
 END_VAR

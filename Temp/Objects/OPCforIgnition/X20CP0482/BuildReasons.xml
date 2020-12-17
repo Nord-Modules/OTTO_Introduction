@@ -1,7 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildReasons>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\opcuamap\opcuamap.uar.gz">
-    <BuildReason>New rule "c:\users\mafio\documents\github\otto_introduction\temp\objects\opcforignition\x20cp0482\opcuamap\opcuamap.uar.gz".</BuildReason>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\arconfig.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\opcforignition\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\ashwac.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\opcforignition\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\iomap.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\opcforignition\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\sysconf.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\opcforignition\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\asfw.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\opcforignition\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\opcforignition\x20cp0482\ashwd.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\opcforignition\hardware.hw" differs.
+</BuildReason>
   </Rule>
   <Rule ID="#cpu_tp.mak">
     <BuildReason>Rule is forced.</BuildReason>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
+    <ConnectionParameters>/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.1.230 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>C:\Users\mafio\Documents\GitHub\OTTO_Introduction\OTTO.apj</ApjFullFileName>
+    <ProjectName>OTTO</ProjectName>
+    <ActiveConfigurationName>ModbusForIgnition</ActiveConfigurationName>
+    <LicenseDataFolder>C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Temp\Objects\ModbusForIgnition\X20CP0482</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

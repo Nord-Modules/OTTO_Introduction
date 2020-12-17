@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.7.2.98?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="ModbusTcp_any" Type="ModbusTcp_any" Version="1.0.6.0">
+    <Connection Connector="ETH1" TargetModule="OpcUa_any" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Parameter ID="IpAddress" Value="192.168.1.7" />
+  </Module>
   <Module Name="OpcUa_any" Type="OpcUa_any" Version="1.0.0.1">
     <Connection Connector="ETH1" TargetModule="X20CP0482" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="ModbusTcp_any" TargetConnector="ETH1">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
     </Connection>
     <Parameter ID="ServerDiagnostics" Value="on" />
@@ -23,6 +32,13 @@
       <Parameter ID="Mode" Value="Manual" />
       <Parameter ID="InternetAddress" Value="192.168.1.230" />
       <Parameter ID="SubnetMask" Value="255.255.0.0" />
+      <Parameter ID="ActivateModbus" Value="1" />
+      <Parameter ID="NumSlaves" Value="-1" />
+      <Parameter ID="NumAllBlocks" Value="-1" />
+      <Parameter ID="MemSizeIn" Value="-1" />
+      <Parameter ID="MemSizeOut" Value="-1" />
+      <Parameter ID="ModbusSlaveGrey" Value="1" />
+      <Parameter ID="ModbusMaster" Value="0" />
     </Connector>
     <Connector Name="IF3">
       <Parameter ID="Operation" Value="EthOnly" />

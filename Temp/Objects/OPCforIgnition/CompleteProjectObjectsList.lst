@@ -308,7 +308,7 @@
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\Hardware.hw"
     LogicalPath="OPCforIgnition.Hardware.hw"
     Type="File"
-    LastWriteTime="132524263472800339"
+    LastWriteTime="132526040865549259"
     Private="false" />
   <Object
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\Hardware.hwl"
@@ -320,7 +320,7 @@
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\Cpu.pkg"
     LogicalPath="OPCforIgnition.X20CP0482"
     Type="Cpu"
-    LastWriteTime="132521708803154246" />
+    LastWriteTime="132524306601197957" />
   <Object
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\Cpu.sw"
     LogicalPath="OPCforIgnition.X20CP0482.Cpu.sw"
@@ -365,7 +365,7 @@
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\Connectivity\OpcUA\OpcUa.uanodeset"
     LogicalPath="OPCforIgnition.X20CP0482.Connectivity.OpcUA.OpcUa.uanodeset"
     Type="File"
-    LastWriteTime="132524299679935427"
+    LastWriteTime="132526021322306528"
     Private="false" />
   <Object
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\TextSystem\Package.pkg"
@@ -478,7 +478,7 @@
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\AccessAndSecurity\TransportLayerSecurity\Config.sslcfg"
     LogicalPath="OPCforIgnition.X20CP0482.AccessAndSecurity.TransportLayerSecurity.Config.sslcfg"
     Type="File"
-    LastWriteTime="132524233738936255"
+    LastWriteTime="132526012588511186"
     Private="false" />
   <Object
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\AccessAndSecurity\Firewall\Package.pkg"
@@ -521,12 +521,6 @@
     LogicalPath="OPCforIgnition.X20CP0482.OpcArMap.opcc"
     Type="File"
     LastWriteTime="132521606592905139"
-    Private="false" />
-  <Object
-    Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\X20CP0482\OpcMap.opcm"
-    LogicalPath="OPCforIgnition.X20CP0482.OpcMap.opcm"
-    Type="File"
-    LastWriteTime="132521711041755199"
     Private="false" />
   <Object
     Path="C:\Users\mafio\Documents\GitHub\OTTO_Introduction\Physical\OPCforIgnition\Hardware.jpg"
